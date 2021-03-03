@@ -1,4 +1,4 @@
-QT       += core gui
+QT       +=  multimedia core gui  network websockets
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -16,14 +16,24 @@ DEFINES += QT_DEPRECATED_WARNINGS
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
+    audiolistener.cpp \
     main.cpp \
-    mainwindow.cpp
+    mainwindow.cpp \
+    realtimevoice.cpp \
+    translater.cpp
 
 HEADERS += \
-    mainwindow.h
+    audiolistener.h \
+    const.h \
+    mainwindow.h \
+    realtimevoice.h \
+    translater.h
 
 FORMS += \
-    mainwindow.ui
+    audiolistener.ui \
+    mainwindow.ui \
+    realtimevoice.ui \
+    translater.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin

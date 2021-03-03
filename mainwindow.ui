@@ -2,21 +2,92 @@
 <ui version="4.0">
  <class>MainWindow</class>
  <widget class="QMainWindow" name="MainWindow">
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
   <property name="geometry">
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>800</width>
-    <height>600</height>
+    <width>1500</width>
+    <height>110</height>
    </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1000</width>
+    <height>110</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1500</width>
+    <height>110</height>
+   </size>
+  </property>
+  <property name="font">
+   <font>
+    <family>华光标题宋_CNKI</family>
+    <pointsize>10</pointsize>
+   </font>
   </property>
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
-  <widget class="QWidget" name="centralwidget"/>
-  <widget class="QMenuBar" name="menubar"/>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="Realtimevoice" name="rtvoicemodel" native="true">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>1051</width>
+      <height>31</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="Audiolistener" name="audiomodel" native="true">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>60</y>
+      <width>1051</width>
+      <height>30</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="Translater" name="tranmodel" native="true">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>30</y>
+      <width>1051</width>
+      <height>30</height>
+     </rect>
+    </property>
+   </widget>
+  </widget>
   <widget class="QStatusBar" name="statusbar"/>
  </widget>
+ <customwidgets>
+  <customwidget>
+   <class>Realtimevoice</class>
+   <extends>QWidget</extends>
+   <header>realtimevoice.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>Audiolistener</class>
+   <extends>QWidget</extends>
+   <header location="global">audiolistener.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>Translater</class>
+   <extends>QWidget</extends>
+   <header>translater.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
  <resources/>
  <connections/>
 </ui>
