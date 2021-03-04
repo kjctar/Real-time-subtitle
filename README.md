@@ -1,4 +1,5 @@
 # -Real-time-subtitle
+# 实时字幕
 基于QT调用百度实时语音API和百度翻译API，实现视频字幕的实时生成
 可以设置音频的输入设备，如果只录制电脑的系统声音就选择立体声
 ![Image of Yaktocat](https://github.com/kjctar/Real-time-subtitle/blob/master/1.png)
