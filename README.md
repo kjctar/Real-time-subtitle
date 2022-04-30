@@ -9,4 +9,8 @@
 
 ![Image of Yaktocat](https://github.com/kjctar/Real-time-subtitle/blob/master/2.png)
 
+Gin Web Framework
 
+Build Status codecov Go Report Card GoDoc Join the chat at https://gitter.im/gin-gonic/gin Sourcegraph Open Source Helpers Release TODOs
+
+Gin is a web framework written in Go (Golang). It features a martini-like API with performance that is up to 40 times faster thanks to httprouter. If you need performance and good productivity, you will love Gin.
